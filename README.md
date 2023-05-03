@@ -26,7 +26,7 @@ La aplicación está construida con una arquitectura fullstack utilizando React 
 
 - /login: inicio de sesión.
 - /register: registro de usuarios.
-- /admin: administración de la aplicación.
+- /admin: administración de productos.
 - /admin/update/:id: actualización de productos por id 
 - /product/:id: vista de producto por id
 - /?page=0:  paginación 
