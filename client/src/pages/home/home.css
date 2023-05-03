@@ -1,0 +1,11 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem 3rem;
+  padding: 200px 3rem 2rem 3rem;
+  line-height: 2rem;
+}

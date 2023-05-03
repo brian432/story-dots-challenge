@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6242E8;
+  --secondary-color: #00FCC3;
+  --primary-color-light: #E0D9FA;
+  --menu-color: #252525;
+  --text-color: #ffff;
+  --error-color: rgb(128, 19, 19);
+  font-family: 'Open Sans', sans-serif;
+  min-width: 320px;
+}
+
+.App {
+  min-width: 320px;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.swal2-popup {
+  font-family: 'Open Sans', sans-serif;
+}

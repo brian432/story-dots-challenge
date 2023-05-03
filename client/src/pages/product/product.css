@@ -1,0 +1,101 @@
+.productWrapper {
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  padding: 120px 1rem 2rem 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.productWrapper h1{
+  font-size: clamp(2.5rem, 5vw, 3rem);
+}
+.productWrapper .divImg {
+  width: 100%;
+  height: auto;
+}
+
+.productWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapperMarca {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  align-self: center;
+}
+
+.productWrapper .divImgMarca {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: -20px;
+  background-color: var(--text-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productWrapper .divButtons{
+  width: 100%;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  align-self: center;
+}
+
+.containerButtons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.productWrapper .divButtons .btn, .containerButtons .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px!important;
+  width: 200px;
+  padding: 5px;
+  text-decoration: none;
+}
+.productWrapper .details {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width:769px) {
+  .productWrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 1fr 0.7fr;
+    gap: 0 3rem;
+    padding: 50px 3rem 0 3rem;
+    align-items: center;
+    grid-template-areas:
+      "image details"
+      "description button";
+  }
+
+  .productWrapper .divImage {
+    grid-area: image;
+  }
+
+  .productWrapper .description {
+    grid-area: description;
+    align-self: flex-start;
+  }
+
+  .productWrapper .button {
+    grid-area: button;
+  }
+  .productWrapper .divButtons{
+    align-self: flex-start;
+  }
+}

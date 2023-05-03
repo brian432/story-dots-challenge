@@ -1,0 +1,68 @@
+.backgroundImage {
+  z-index: -5;
+  position: absolute;
+  inset: 0px;
+  background: url(https://storydots.app/static/media/background-signal-noise-texture.b9f82d74.png) repeat
+}
+
+#app {
+  position: relative;
+}
+
+.backgroundMove {
+  z-index: -3;
+  position: absolute;
+  inset: 0px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgb(0, 252, 195), rgb(98, 66, 232) 30%) 50% 44% / 300% 300%;
+  animation: 60s linear 0s infinite normal none running moveBackground;
+  opacity: 0.9
+}
+
+@keyframes moveBackground {
+  0% {
+    background-size: 300% 300%;
+    background-position: 50% 44%;
+  }
+
+  10% {
+    background-size: 450% 450%;
+    background-position: 50% 30%;
+  }
+
+  20% {
+    background-size: 600% 600%;
+    background-position: 67% 36%;
+  }
+
+  35% {
+    background-size: 600% 600%;
+    background-position: 67% 64%;
+  }
+
+  50% {
+    background-size: 600% 600%;
+    background-position: 50% 70%;
+  }
+
+  65% {
+    background-size: 600% 600%;
+    background-position: 34% 64%;
+  }
+
+  80% {
+    background-size: 600% 600%;
+    background-position: 34% 36%;
+  }
+
+  90% {
+    background-size: 450% 450%;
+    background-position: 50% 30%;
+  }
+
+  100% {
+    background-size: 300% 300%;
+    background-position: 50% 44%;
+  }
+}
