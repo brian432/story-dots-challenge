@@ -63,3 +63,20 @@ Backend
 - [Jest](https://jestjs.io/) : un framework de pruebas para JavaScript.
 - [Supertest](https://www.npmjs.com/package/supertest) : Stripe es una plataforma de pagos en línea segura y fácil de usar para aceptar pagos en aplicaciones web.
 - [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) : una biblioteca para ejecutar una instancia de MongoDB en memoria durante las pruebas.
+
+# Instalación 
+ ```javascript 
+  npm run install-all
+```
+# Configuración de variables de entorno
+```javascript 
+- MONGO_DB_URL=tu base de datos mongoDB
+- PORT=3001
+- SECRET=secreto-de-tu-token-jwt
+```
+
+# Uso
+ ```javascript
+-backend: cd server | npm run dev
+-frontend: cd client | npm run dev
+ 
