@@ -1,10 +1,10 @@
 import { type ResponseDataProductDel } from '../types'
-const { API_URL } = process.env
+
 export const delProduct = async (id: string): Promise<ResponseDataProductDel> => {
   const token = localStorage.getItem('token')
   if (token !== null) {
     try {
-      const res = await fetch(`${API_URL}/products/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/products/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-type': 'application/json',

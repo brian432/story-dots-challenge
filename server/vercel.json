@@ -1,0 +1,13 @@
+{
+  "verion": 2,
+  "builds":[{
+    "src": "./index.js",
+    "use": "@vercelo/node"
+  }],
+  "routes":[
+    {
+      "src":"/(.*)",
+      "dest": "/"
+    }
+  ]
+}

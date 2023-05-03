@@ -1,11 +1,8 @@
 import { type IRegisterPost, type ILogin, type ResponseDataRegister, type ResponseDataLogin } from '../types'
-const {
-  API_URL
-} = process.env
 
 export const postUser = async (data: IRegisterPost): Promise<ResponseDataRegister> => {
   try {
-    const res = await fetch(`${API_URL}/register`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/register`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -26,7 +23,7 @@ export const postUser = async (data: IRegisterPost): Promise<ResponseDataRegiste
 
 export const postLogin = async (data: ILogin): Promise<ResponseDataLogin> => {
   try {
-    const res = await fetch(`${API_URL}/login`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
