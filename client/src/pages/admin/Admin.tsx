@@ -72,7 +72,7 @@ export const Admin: React.FC = () => {
               <div className='inputsContainer'>
                 {errors.description && touched.description && <span className='errorColor'>{errors.description}</span>}
                 <Field name="description" className={errors.description && touched.description && 'campo-obligatorio'} spellCheck="false" />
-                <label htmlFor='description' className='label'>Descripcion</label>
+                <label htmlFor='description' className='label'>Descripción</label>
               </div>
               <div className='inputsContainer'>
                 {errors.price && touched.price && <span className='errorColor'>{errors.price}</span>}
