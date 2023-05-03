@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useGetProductsId } from '../../query-hooks/useGetProducts'
 import Spinner from '../../components/spinner/Spinner'
 import './product.css'
 import { useDelProducts } from '../../query-hooks/useDelProducts'
 import NotFound from '../../components/notFound/NotFound'
+import { Context } from '../../context/LoggedState'
 
 export const Product: React.FC = () => {
+  const { state: { isLogged } } = useContext(Context)
+  console.log(isLogged)
   const { id } = useParams()
   const { isLoading, isError, data } = useGetProductsId(id as string)
   const { mutate } = useDelProducts()
@@ -33,10 +36,14 @@ export const Product: React.FC = () => {
         </div>
       </div>
       <p className='description'>{data?.description}</p>
-      <div className='divButtons'>
-        <button className='btn' onClick={handleDelete}>Eliminar</button>
-        {data?.id ? <Link className='btn' to={`/admin/update/${data?.id}`}>Actualizar</Link> : null}
-      </div>
+      {
+        isLogged
+          ? <div className='divButtons'>
+            <button className='btn' onClick={handleDelete}>Eliminar</button>
+            {data?.id ? <Link className='btn' to={`/admin/update/${data?.id}`}>Actualizar</Link> : null}
+          </div>
+          : null
+      }
     </main>
   )
 }

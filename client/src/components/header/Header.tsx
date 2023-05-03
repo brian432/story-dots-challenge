@@ -36,12 +36,12 @@ export const Header: React.FC = () => {
         {
           isLogged
             ? <>
-            <div>
+              <div>
                 <Link to='/' onClick={handleLogout}>Cerrar sesión</Link>
               </div>
-                <div className='divAdmin'>
-              <Link to='/admin' onClick={() => { handleMenu('') }}>Admin</Link>
-            </div>
+              <div className='divAdmin'>
+                <Link to='/admin' onClick={() => { handleMenu('') }}>Admin</Link>
+              </div>
             </>
             : <>
               <div>
