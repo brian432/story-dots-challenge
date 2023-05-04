@@ -17,8 +17,7 @@ La aplicación está construida con una arquitectura fullstack utilizando React 
 - Home: la vista de inicio muestra una lista de productos, incluyendo una imagen del producto, 
  la marca, el nombre y el precio.
  
-- Vista de detalles de producto: al hacer clic en un producto en la vista de inicio, el usuario es llevado a la vista de detalles de producto que muestra todos los detalles del producto, 
-  incluyendo la imagen, la marca, el nombre, el precio y la descripción. Dependiendo si el usuario ha iniciado sesión o no, se mostrarán los botones para actualizar o eliminar el producto.
+- Vista de detalles de producto: al hacer clic en un producto en la vista de inicio, el usuario es llevado a la vista de detalles del producto que muestra la marca, el nombre, el precio y la descripción. Dependiendo si el usuario ha iniciado sesión o no, se mostrarán los botones para actualizar o eliminar el producto.
   
 - Paginación: la vista de inicio carga un máximo de 8 productos y se puede paginar para obtener los siguientes productos en la base de datos.
  
@@ -36,7 +35,6 @@ La aplicación está construida con una arquitectura fullstack utilizando React 
 Frontend
 - [Typescript](https://www.typescriptlang.org/) : Un superconjunto de JavaScript que agrega tipos estáticos al lenguaje
 - [React](https://reactjs.org/) : Una biblioteca de JavaScript para construir interfaces de usuario
-- [Redux/Toolkit](https://redux-toolkit.js.org/) : Una biblioteca para la gestión de estado en aplicaciones de JavaScript
 - [react-router-dom](https://reactrouter.com/en/main) : Una biblioteca para el manejo de rutas en aplicaciones de React
 - [@vitejs/plugin-react](https://github.com/vitejs/vite/tree/main/packages/plugin-react) : un complemento para el compilador Vite que permite la compilación de archivos de React.
 - [@tanstack/react-query](https://tanstack.com/query/v4/) :  una biblioteca de administración de estados que simplifica la gestión de la caché y el estado remoto.
