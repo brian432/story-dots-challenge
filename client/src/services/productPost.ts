@@ -1,6 +1,6 @@
 import { type ResponseDataProductPost, type IProductPost } from '../types'
 export const postProduct = async (data: IProductPost): Promise<ResponseDataProductPost> => {
-  const token = localStorage.getItem('token')
+  const token = sessionStorage.getItem('token')
   if (token !== null) {
     try {
       const res = await fetch(`${import.meta.env.VITE_API_URL}/products`, {

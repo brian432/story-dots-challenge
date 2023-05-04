@@ -1,7 +1,7 @@
 import { type ResponseDataProductPut, type IProductPutFetch } from '../types'
 
 export const putProduct = async ({ values, id }: IProductPutFetch): Promise<ResponseDataProductPut> => {
-  const token = localStorage.getItem('token')
+  const token = sessionStorage.getItem('token')
   if (token !== null && id) {
     try {
       const res = await fetch(`${import.meta.env.VITE_API_URL}/products/${id}`, {

@@ -15,7 +15,7 @@ interface Props {
   children: ReactNode
 }
 const initialState = {
-  isLogged: !!localStorage.getItem('token') // utilizo localStorage para verificar si el login fue exitoso y persistir el estado
+  isLogged: !!sessionStorage.getItem('token') // utilizo sessionStorage para verificar si el login fue exitoso y persistir el estado
 }
 
 export const Reducer = (state: AppState, action: Action): AppState => {
@@ -23,7 +23,7 @@ export const Reducer = (state: AppState, action: Action): AppState => {
     case 'logged':
       return action.payload
     case 'logout':
-      localStorage.removeItem('token')
+      sessionStorage.removeItem('token')
       return action.payload
     default:
       return state

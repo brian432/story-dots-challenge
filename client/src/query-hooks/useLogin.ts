@@ -18,7 +18,7 @@ export const useLogin = (): ReturnUseLogin => {
     mutationFn: postLogin,
     onSuccess: (data: ResponseDataLogin) => {
       if (data?.status_code === 200) {
-        localStorage.setItem('token', data.data?.token)
+        sessionStorage.setItem('token', data.data?.token)
         dispatch({
           type: 'logged',
           payload: { isLogged: true }
