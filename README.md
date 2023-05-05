@@ -3,6 +3,9 @@
 Este proyecto es una aplicación web que permite a los usuarios crear, ver, actualizar y eliminar productos. 
 La aplicación está construida con una arquitectura fullstack utilizando React y Node.js. 
 
+Frontend: https://brian-cabrera-story-dots-challenge.vercel.app/
+Backend: https://story-dots-server.onrender.com/
+
 
 # Funcionalidades
 
@@ -21,15 +24,6 @@ La aplicación está construida con una arquitectura fullstack utilizando React 
   
 - Paginación: la vista de inicio carga un máximo de 8 productos y se puede paginar para obtener los siguientes productos en la base de datos.
  
-# Endpoints
-
-- /login: inicio de sesión.
-- /register: registro de usuarios.
-- /admin: administración de productos.
-- /admin/update/:id: actualización de productos por id 
-- /product/:id: vista de producto por id
-- /?page=0:  paginación 
-
 # Dependencias
 
 Frontend
