@@ -4,6 +4,7 @@ Este proyecto es una aplicación web que permite a los usuarios crear, ver, actu
 La aplicación está construida con una arquitectura fullstack utilizando React y Node.js. 
 
 Frontend: https://brian-cabrera-story-dots-challenge.vercel.app/
+
 Backend: https://story-dots-server.onrender.com/
 
 
