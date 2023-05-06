@@ -60,5 +60,19 @@ marcasRouter.get('/', async (_req: Request, res: Response, _next: NextFunction):
     })
   }
 })
+/** 
+* @openapi
+* /marcas:
+*   get:
+*     tags:
+*       - marcas
+*     summary: "Obtener todos las marcas"
+*     description: Este endpoint es para obtener todas las marcas
+*     responses:
+*       '200':
+*         description: Retorna el status_code y un array con todos las marcas almacenados
+*       '404':
+*         description: Retorna el error not found
+*/
 
 export default marcasRouter

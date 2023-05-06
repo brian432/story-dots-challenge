@@ -27,13 +27,33 @@ registerRouter.post('/', validateRegister, async (req: Request, res: Response): 
       data: savedUser
     })
   } catch (err) {
-    if(err instanceof Error){
+    if (err instanceof Error) {
       res.status(400).send({
         status_code: 400,
         error: err.message
       })
-    } 
+    }
   }
 })
+/** 
+* @openapi
+* /register:
+*   post:
+*     tags:
+*       - login
+*     summary: "registrar usuario"
+*     description: Este endpoint es para registrar usuarios
+*     requestBody:
+*       content:
+*         application/json:
+*           schema:
+*             $ref: '#/components/schemas/register'
+*     responses:
+*       '201':
+*         description: Retorna un objeto con el status_code y la informacion sobre el usurio registrado.
+*       '400':
+*         description: Retorna un objeto con el status_code y usuario duplicado
+*     
+*/
 
 export default registerRouter

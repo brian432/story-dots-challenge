@@ -1,0 +1,11 @@
+POST http://localhost:3001/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTU5NDliNzU0ZmMwNTQ1YzBkNTA3MyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MzMzMTQ2MSwiZXhwIjoxNjgzNDE3ODYxfQ.XSWNqPpFF03ps--yI3UF2G00yd6IYEiXU9724Ut7NlY
+
+{
+  "name": "dsadas",
+  "description": "sdsadsad",
+  "image_url": "dsadsad",
+  "price": 123121,
+  "marca": "nike"
+}
