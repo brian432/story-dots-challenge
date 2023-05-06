@@ -8,10 +8,10 @@ const swaggerDefinition: OAS3Definition = {
   },
   servers: [
     {
-      url: "http://localhost:3001",
+      url: "https://story-dots-server.onrender.com/"
     },
     {
-      url: "https://story-dots-server.onrender.com/"
+      url: "http://localhost:3001",
     }
   ],
   components: {
