@@ -56,7 +56,7 @@ Backend
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) : Una biblioteca para trabajar con tokens JWT
 - [bcrypt](https://www.npmjs.com/package/bcrypt) : una biblioteca para cifrar contraseñas.
 - [Jest](https://jestjs.io/) : un framework de pruebas para JavaScript.
-- [Supertest](https://www.npmjs.com/package/supertest) : Stripe es una plataforma de pagos en línea segura y fácil de usar para aceptar pagos en aplicaciones web.
+- [Supertest](https://www.npmjs.com/package/supertest) : es una biblioteca de pruebas de integración para Node.js que permite realizar solicitudes HTTP y asertar sobre las respuestas recibidas.
 - [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) : una biblioteca para ejecutar una instancia de MongoDB en memoria durante las pruebas.
 - [swagger-jsdoc - swagger-ui-express](https://editor.swagger.io/) : herramienta para crear, documentar y probar APIs RESTful de manera eficiente y efectiva.
 # Instalación 
