@@ -5,7 +5,7 @@ La aplicación está construida con una arquitectura fullstack utilizando React 
 
 Frontend: https://brian-cabrera-story-dots-challenge.vercel.app/
 
-Backend: https://story-dots-server.onrender.com/
+ENDPOINTS: https://story-dots-server.onrender.com/documentation/
 
 
 # Funcionalidades
@@ -42,6 +42,8 @@ Frontend
 
 Backend
 
+ - ENDPOINTS: https://story-dots-server.onrender.com/documentation/
+
  -Funcionamiento: El backend funciona recibiendo solicitudes a través de Express, manejando estas solicitudes en los controladores correspondientes y realizando operaciones en la base de datos utilizando Mongoose. 
   Los resultados de estas operaciones se envian al cliente a través de la respuesta HTTP
 
@@ -56,7 +58,7 @@ Backend
 - [Jest](https://jestjs.io/) : un framework de pruebas para JavaScript.
 - [Supertest](https://www.npmjs.com/package/supertest) : Stripe es una plataforma de pagos en línea segura y fácil de usar para aceptar pagos en aplicaciones web.
 - [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) : una biblioteca para ejecutar una instancia de MongoDB en memoria durante las pruebas.
-
+- [swagger-jsdoc - swagger-ui-express](https://editor.swagger.io/) : herramienta para crear, documentar y probar APIs RESTful de manera eficiente y efectiva.
 # Instalación 
  ```javascript 
   npm run install-all
